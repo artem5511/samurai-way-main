@@ -7,27 +7,29 @@
 
   "n c";
 
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 90px 1fr;
   grid-template-columns: 2fr 10fr;
 }
-.app-header {
+.header {
   grid-area: h;
-  background-color: #931c44;
+  background-color: grey;
+  margin: 0px 0px 15px;
 }
-.app-header img {
-  width: 50px;
+.header img {
+  width: 75px;
 }
 
-.app-sidebar {
+.nav {
   grid-area: n;
-  background-color: aqua;
+  background-color: #687;
 }
 
-.app-content {
+.content {
   grid-area: c;
   background-color: gold;
+  margin: 0px 0px 0px 20px;
 }
-.app-content img {
+.content img {
   width: 100%;
   height: 70%;
 }
