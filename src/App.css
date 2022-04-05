@@ -1,3 +1,4 @@
+
 .app-wrapper {
   display: grid;
   max-width: 1200px;
@@ -10,27 +11,9 @@
   grid-template-rows: 90px 1fr;
   grid-template-columns: 2fr 10fr;
 }
-.header {
-  grid-area: h;
-  background-color: grey;
-  margin: 0px 0px 15px;
-}
-.header img {
-  width: 75px;
-}
 
-.nav {
-  grid-area: n;
-  background: #452;
-}
 
-.content {
-  grid-area: c;
-  background-color: gold;
-  margin: 0px 0px 0px 20px;
-}
-.content img {
-  width: 100%;
-  height: 70%;
-}
+
+
+
 
