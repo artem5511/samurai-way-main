@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Navbar.module.css';
-console.log(s);
 
 // let s ={
 //     'nav' : '',
