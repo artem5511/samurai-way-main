@@ -1,22 +1,21 @@
 import React from 'react';
-import './Navbar.css';
+import './Navbar.module.css';
 
 export const Navbar = () => {
     return <nav className='nav'>
-        <img src='https://img1.akspic.ru/previews/7/8/6/7/6/167687/167687-pesok-senokosnoye_ugodye-ekoregion-lazurnyj-vodoem-360x640.jpg' alt='#'/>
-        <div>
+        <div className='item'>
             <a>Profile</a>
         </div>
-        <div>
+        <div className='item'>
             <a>Message</a>
         </div>
-        <div>
+        <div className='item'>
             <a>News</a>
         </div>
-        <div>
+        <div className='item'>
             <a>Music</a>
         </div>
-        <div>
+        <div className='item'>
             <a>Settings</a>
         </div>
         </nav>
