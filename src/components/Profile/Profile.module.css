@@ -1,18 +1,15 @@
 .content {
     padding: 5px;
     grid-area: c;
-    background-color: lightcyan;
+    background-color: #489;
     margin: 0px 0px 0px 20px;
 }
 .content img {
     width: 100%;
-    height: 70%;
+    height: 40%;
 }
 
 .item {
-    color: lawngreen;
+    color: darkturquoise;
 }
 
-.item.active {
-    color: gold;
-}
