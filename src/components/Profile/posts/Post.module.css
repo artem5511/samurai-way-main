@@ -3,13 +3,10 @@
 }
 
 .item img {
-<<<<<<< HEAD
     width: 150px;
     height:90px;
     border-radius: 30%;
-=======
     width: 90px;
     height:70px;
     border-radius: 50%;
->>>>>>> cb41539fb60521531f7b23e7443fb481b9eadb97
 }
