@@ -12,6 +12,12 @@
   grid-template-columns: 2fr 10fr;
 }
 
+.app-wrapper-content {
+  padding: 5px;
+  grid-area: c;
+  background-color: #489;
+  margin: 0px 0px 0px 20px;
+}
 
 
 
