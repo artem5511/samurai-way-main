@@ -1,17 +1,13 @@
 .nav {
-    padding: 20px;
+    padding: 10px;
     grid-area: n;
-    background-image: url(../images/wallpaper_480x800_№28_34.jpg) ;
-    background-color: coral;
-    background-repeat: unset;
+    background: salmon;
 }
 
-.item a {
+.item {
     color: white;
-    text-decoration: none;
 }
 
-.item a.activeLink {
+.item.active {
     color: gold;
 }
-
