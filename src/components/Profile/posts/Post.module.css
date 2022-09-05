@@ -3,10 +3,7 @@
 }
 
 .item img {
-    width: 150px;
+    width: 100px;
     height:90px;
-    border-radius: 30%;
-    width: 90px;
-    height:70px;
-    border-radius: 50%;
+    border-radius: 40%;
 }
