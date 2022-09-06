@@ -4,16 +4,13 @@ import {ProfileInfo} from "./ProfileInfo/Profileinfo";
 import {MyPosts} from "./MyPosts/MyPosts";
 
 
-type ProfilePropsType = {
-}
-
-export const Profile = (props: { posts: any[]; }) => {
+export const Profile = (props: { state: { posts: any[]; }; }) => {
 
 
     return (
         <div>
             <ProfileInfo/>
-            <MyPosts posts={props.posts} />
+            <MyPosts posts={props.state.posts} />
         </div>
 )
 };

@@ -5,12 +5,10 @@ import {DialogItem} from "./DialogItem/DialogItem";
 import {Messages} from "./Messages/Messages";
 
 
-export  const Dialogs = (props: {
-    messages: any[];
-    dialogs: any[]; }) => {
+export  const Dialogs = (props: { state: { dialogs: any[]; messages: any[]; }; }) => {
 
-    let dialogsElements = props.dialogs.map (dialog => <DialogItem name={dialog.name} id={dialog.id}/> );
-    let messagesElements = props.messages.map(message => <Messages message={message.message}/> );
+    let dialogsElements = props.state.dialogs.map (dialog => <DialogItem name={dialog.name} id={dialog.id}/> );
+    let messagesElements = props.state.messages.map(message => <Messages message={message.message}/> );
 
     return (
         <div className={s.dialogs}>
