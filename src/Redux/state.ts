@@ -11,7 +11,7 @@ type PostsType = {
     message: string,
     likesCount: number
 }
-type DialogsPageType = {
+ type DialogsPageType = {
     messages: Array<MessageType>,
      dialogs: Array<DialogsType>
  }
@@ -22,7 +22,6 @@ type RootStateType = {
     dialogsPage: DialogsPageType,
     profilePage: ProfilePageType
 }
-
 let state: RootStateType = {
     dialogsPage: {
         messages: [
