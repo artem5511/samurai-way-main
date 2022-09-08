@@ -1,12 +1,8 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import {Post} from "../posts/Post";
-import {PostsType} from "../../../Redux/state";
 
-type MyPostsPropsType = {
-    posts: Array<PostsType>
-}
-export const MyPosts = (props: MyPostsPropsType) => {
+export const MyPosts = (props: { posts: any[]; }) => {
     // let posts = [
     //     {id: 1, message: 'Hi, how are you?', likesCount: 7},
     //     {id: 2, message: 'It my first post', likesCount: 17},

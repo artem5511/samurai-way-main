@@ -1,28 +1,27 @@
-export type MessageType = {
+type MessageType = {
     id: number,
     message: string
 }
-export type DialogsType = {
+type DialogsType = {
     id: number,
     name: string
 }
-export type PostsType = {
+type PostsType = {
     id: number,
     message: string,
     likesCount: number
 }
- export type DialogsPageType = {
+ type DialogsPageType = {
     messages: Array<MessageType>,
      dialogs: Array<DialogsType>
  }
-export type ProfilePageType = {
-        posts: Array<PostsType>
+type ProfilePageType = {
+    posts: Array<PostsType>
 }
-export type RootStateType = {
+type RootStateType = {
     dialogsPage: DialogsPageType,
     profilePage: ProfilePageType
 }
-
 let state: RootStateType = {
     dialogsPage: {
         messages: [

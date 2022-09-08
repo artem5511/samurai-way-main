@@ -1,11 +1,12 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import s from '../Dialogs.module.css'
-import {MessageType} from "../../../Redux/state";
 
-type MessagesMessageType = {
-    state: MessageType
+
+type MessagesPropsType = {
+    message: string;
 }
-export const Messages =(props: MessagesMessageType) => {
-    return  <div className={s.message}>{props.state.message}</div>
+
+export const Messages =(props: MessagesPropsType) => {
+    return  <div className={s.message}>{props.message}</div>
 }
