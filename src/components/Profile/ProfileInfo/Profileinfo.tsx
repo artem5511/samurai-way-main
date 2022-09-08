@@ -1,5 +1,7 @@
 import React from "react";
 import s from "./ProfileInfo.module.css"
+import {ProfilePageType} from "../../../Redux/state";
+
 
 export const ProfileInfo = () => {
         return (

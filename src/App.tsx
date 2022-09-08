@@ -8,10 +8,13 @@ import {BrowserRouter, Route} from "react-router-dom";
 import {News} from "./components/News/News";
 import {Music} from "./components/Music/Music";
 import {Settings} from "./components/Settings/Settings";
+import {RootStateType} from "./Redux/state";
 
-const App = (props) => {
-
-    return (
+type AppRootStateType = {
+    state: RootStateType
+}
+const App = (props:AppRootStateType) => {
+        return (
         <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
@@ -25,7 +28,7 @@ const App = (props) => {
                 </div>
             </div>
         </BrowserRouter>
-    );
+    )
 }
 
 export default App;
