@@ -4,7 +4,7 @@ import s from '../Dialogs.module.css'
 
 type DialogsItemPropsType = {
     name: string;
-    id: any;
+    id: number;
 }
 
 export const DialogItem = (props: DialogsItemPropsType) => {
