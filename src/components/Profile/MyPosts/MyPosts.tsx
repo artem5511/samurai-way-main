@@ -5,7 +5,7 @@ import {PostsType} from "../../../Redux/state";
 
 type MyPostsPropsType = {
     posts: Array<PostsType>
-    addPost: (postMessage: any)=> void
+    addPost: (postMessage: string)=> void
 }
 
 export const MyPosts = (props: MyPostsPropsType) => {

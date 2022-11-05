@@ -50,7 +50,7 @@ let state: RootStateType = {
     }
 }
 
-export let addPost = (postMessage:Array<PostsType>)=> {
+export let addPost = (postMessage: string)=> {
     let newPost = {
         id: 5,
         message: postMessage,
