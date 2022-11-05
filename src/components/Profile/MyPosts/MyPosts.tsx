@@ -1,12 +1,13 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import {Post} from "../posts/Post";
-import {PostsType, ProfilePageType} from "../../../Redux/state";
+import {PostsType, ProfilePageType, updateNewPostText} from "../../../Redux/state";
 
 type MyPostsPropsType = {
     posts: Array<PostsType>
     addPost: (postMessage: string)=> void
     newPostText: string
+    updateNewPostText: (newText: string) => void
 }
 
 export const MyPosts = (props: MyPostsPropsType) => {
@@ -24,15 +25,13 @@ export const MyPosts = (props: MyPostsPropsType) => {
     const newPostElement = React.useRef<HTMLTextAreaElement>('');
 
     let addPost = () => {
-        debugger
-        let text = newPostElement.current.value;
-        props.addPost(text)
-        newPostElement.current.value;
+        // let text = newPostElement.current.value;
+        props.addPost('')
     }
 
 let onPostChange = () => {
     let text = newPostElement.current.value;
-    console.log(text)
+    props.updateNewPostText(text)
 }
     return <div className={s.postsBlock}>
         <h3>My posts</h3>
