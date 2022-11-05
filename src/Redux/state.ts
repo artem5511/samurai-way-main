@@ -13,12 +13,12 @@ export type PostsType = {
 }
 export type DialogsPageType = {
     messages: Array<MessageType>,
-     dialogs: Array<DialogsType>
- }
+    dialogs: Array<DialogsType>
+}
 export type ProfilePageType = {
     posts: Array<PostsType>
 }
- export type RootStateType = {
+export type RootStateType = {
     dialogsPage: DialogsPageType,
     profilePage: ProfilePageType
 }
@@ -48,5 +48,14 @@ let state: RootStateType = {
             {id: 2, message: 'WTF?', likesCount: 117}
         ]
     }
+}
+
+export let addPost = (postMessage:Array<PostsType>)=> {
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        likesCount: 0
+    };
+    state.profilePage.posts.push(newPost);
 }
 export default state;

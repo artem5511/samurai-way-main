@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import s from './Dialogs.module.css'
 import {DialogItem} from "./DialogItem/DialogItem";
 import {Messages} from "./Messages/Messages";
@@ -10,9 +9,13 @@ type PropsType = {
 }
 
 export  const Dialogs = (props: PropsType) => {
-
     let dialogsElements = props.state.dialogs.map (dialog => <DialogItem name={dialog.name} id={dialog.id}/> );
-    let messagesElements = props.state.messages.map(message => <Messages message={message.message}/> );
+    let messagesElements = props.state.messages.map (message => <Messages message={message.message} key={message.id}/> );
+
+    let addPost = () => {
+        let text = "newMessege";
+        alert(text);
+    }
 
     return (
         <div className={s.dialogs}>
@@ -27,6 +30,7 @@ export  const Dialogs = (props: PropsType) => {
             </div>
             <div className={s.messages}>
                 {messagesElements}
+                    <textarea onClick={addPost}></textarea>
             {/*    <Messages message={messageData[0].message} id={messageData[0].id}/>*/}
             {/*    <Messages message={messageData[1].message} id={messageData[1].id}/>*/}
             {/*    <Messages message={messageData[2].message} id={messageData[2].id}/>*/}
