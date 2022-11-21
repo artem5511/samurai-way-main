@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {RefObject} from 'react';
 import s from './MyPosts.module.css';
 import {Post} from "../posts/Post";
 import {PostsType, ProfilePageType, updateNewPostText} from "../../../Redux/state";
@@ -22,16 +22,17 @@ export const MyPosts = (props: MyPostsPropsType) => {
 
     // let newPostElement = React.createRef<HTMLTextAreaElement>(null);
 
-    const newPostElement = React.useRef<HTMLTextAreaElement>('');
+    // const newPostElement: React.MutableRefObject<HTMLTextAreaElement> = React.useRef<HTMLTextAreaElement>('');
+    const newPostElement = React.useRef<HTMLTextAreaElement>(null);
 
     let addPost = () => {
         // let text = newPostElement.current.value;
-        props.addPost('')
+        props.addPost('');
     }
 
 let onPostChange = () => {
-    let text = newPostElement.current.value;
-    props.updateNewPostText(text)
+    let text = newPostElement.current?.value;
+    if(text) props.updateNewPostText(text)
 }
     return <div className={s.postsBlock}>
         <h3>My posts</h3>
