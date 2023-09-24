@@ -1,7 +1,7 @@
 import React, {RefObject} from 'react';
 import s from './MyPosts.module.css';
 import {Post} from "../posts/Post";
-import {PostsType, ProfilePageType, updateNewPostText} from "../../../Redux/state";
+import {PostsType, ProfilePageType} from "../../../Redux/state";
 
 type MyPostsPropsType = {
     posts: Array<PostsType>
