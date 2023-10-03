@@ -14,8 +14,8 @@
 
 .app-wrapper-content {
   grid-area: c;
-  background: -webkit-linear-gradient(90deg, #c8d9eb,#338fc2,#c5e1ec);
-  background: linear-gradient(90deg, #c8d9eb,#338fc2,#c5e1ec);
+
+  background-color: greenyellow ;
   margin: 0px 0px 0px 20px;
 }
 
